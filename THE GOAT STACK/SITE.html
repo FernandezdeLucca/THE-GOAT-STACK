@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GOAT STACK | Software de Elite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo THE GOAT STACK" class="logo-img">
+            <div class="logo-text">THE GOAT <span>STACK</span></div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#time">O Time</a></li>
+            <li><a href="#rodape" class="btn-nav">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1 id="frase-dinamica">O Código que Escala. <br> O Negócio que Vence.</h1>
+        <p>Soluções de engenharia de software com a pilha tecnológica definitiva</p>
+        <a href="#rodape" class="btn-principal">Solicitar Diagnóstico</a>
+    </header>
+<section id="time" class="time-section">
+    <div class="container">
+        <h2>A Elite por Trás do <span>Código</span></h2>
+        <p class="subtitulo">Uma equipe enxuta, focada em resultados de alto nível.</p>
+
+        <div class="time-grid">
+            <div class="time-card principal">
+                <div class="foto-placeholder">Líder</div>
+                <h3>Pedro Lucas,
+                    Vitor e
+                    Davi
+                </h3>
+                <p class="cargo">CEO & Líderes de Estratégias</p>
+                <p class="bio">Estudantes de ADS com conhecimento em gestão de projetos.</p>
+            </div>
+
+            <div class="time-card">
+                <div class="foto-placeholder">Gramper</div>
+                <h3>Marcelo e Mick4</h3>
+                <p class="cargo">Arquitetos de Soluções</p>
+                <p class="bio">Responsáveis pela estrutura e integração técnica (O Gramper).</p>
+            </div>
+
+            <div class="time-card">
+                <div class="foto-placeholder">Devs</div>
+                <h3>Os 5 Devs</h3>
+                <p class="cargo">Esquadrão de Execução</p>
+                <p class="bio">Programdores de Jscript, python e outras linguagens.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer id="rodape" class="footer-section">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-text">THE GOAT <span>STACK</span></div>
+                <p>A elite do desenvolvimento de software da Zona Leste.</p>
+            </div>
+
+            <div class="footer-contato">
+                <h3>Canais de Atendimento</h3>
+                
+                <a href="https://wa.me/11939528035" target="_blank" class="footer-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="icon-social">
+                    Fale conosco!
+                </a>
+                
+                <a href="mailto:thegoatstack@gmail.com" class="footer-link">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="E-mail" class="icon-social">
+                    thegoatstack@gmail.com
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 THE GOAT STACK. Todos os direitos reservados.
+                #CFDP</p>
+        </div>
+    </footer>
+
+    <script>
+        const mensagens = [
+            "O Código que Escala. <br> O Negócio que Vence.",
+            "Tecnologia de Elite. <br> Resultados Lendários.",
+            "Engenharia de Software. <br> No Topo do Mercado.",
+            "A Pilha Definitiva. <br> Para Projetos Reais.",
+            "Sistemas Robustos. <br> Performance Inabalável.",
+            "Sua Visão, <br> Nosso Código GOAT."
+        ];
+
+        function mudarFrase() {
+            const elemento = document.getElementById("frase-dinamica");
+            const indiceAleatorio = Math.floor(Math.random() * mensagens.length);
+            elemento.innerHTML = mensagens[indiceAleatorio];
+        }
+
+        window.onload = mudarFrase;
+    </script>
+
+</body>
+</html>
